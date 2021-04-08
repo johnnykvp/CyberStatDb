@@ -4,6 +4,17 @@ A collection of data regarding health care organization (HCO) cyberattacks that 
 Created with MySQL Workbench.
 
 ## Example Queries
+### Obtaining all data
+SELECT Organization.Name, Organization.OrgType, Breach.BreachType, 
+Incident.Victim, Incident.VictimEstimate, Incident.CostEstimate, Incident.Notes, 
+Date.IncidentDate, Source.Link, Source.Domain, Date.DateAdded,
+Incident.IncidentID
+FROM Incident
+INNER JOIN Organization ON Organization.OrgID = FK_OrgID
+INNER JOIN Breach ON Breach.BreachID = FK_BreachID
+INNER JOIN Date ON Date.DateID = FK_DateID
+INNER JOIN Source ON Source.SourceID = FK_SourceID
+ORDER BY Organization.OrganizationName;
 
 ## Other Notes
 
