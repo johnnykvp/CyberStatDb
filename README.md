@@ -11,8 +11,6 @@ Incident.Victim, Incident.VictimEstimate, Incident.CostEstimate, Incident.Notes,
 
 Date.IncidentDate, Source.Link, Source.Domain, Date.DateAdded,
 
-Incident.IncidentID
-
 FROM Incident
 
 INNER JOIN Organization ON Organization.OrgID = FK_OrgID
