@@ -4,4 +4,4 @@ Created with MySQL Workbench.
 
 ## Example Queries
 
-### Other Notes
+## Other Notes
