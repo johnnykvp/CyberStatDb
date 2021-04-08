@@ -15,6 +15,8 @@ INNER JOIN Date ON Date.DateID = FK_DateID
 INNER JOIN Source ON Source.SourceID = FK_SourceID
 ORDER BY Organization.Name;
 
+### Adding a new entry
+
 ## Other Notes
 
 ## Included Files
