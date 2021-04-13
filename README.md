@@ -9,11 +9,12 @@ Created with MySQL Workbench.
 ### Obtaining all data
 SELECT Organization.Name, Organization.OrgType, Breach.BreachType, 
 Incident.Victim, Incident.VictimEstimate, Incident.CostEstimate, Incident.Notes, 
-Date.IncidentDate, Source.Link, Source.Domain, Date.DateAdded,
+Date.IncidentDate, Link.URL, Source.Domain, Date.DateAdded
 FROM Incident
 INNER JOIN Organization ON Organization.OrgID = FK_OrgID
 INNER JOIN Breach ON Breach.BreachID = FK_BreachID
 INNER JOIN Date ON Date.DateID = FK_DateID
+INNER JOIN Link ON Link.LinkID = FK_LinkID
 INNER JOIN Source ON Source.SourceID = FK_SourceID
 ORDER BY Organization.Name;
 
