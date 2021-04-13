@@ -3,6 +3,8 @@ A collection of data regarding health care organization (HCO) cyberattacks that 
 
 Created with MySQL Workbench.
 
+## Installation
+
 ## Example Queries
 ### Obtaining all data
 SELECT Organization.Name, Organization.OrgType, Breach.BreachType, 
