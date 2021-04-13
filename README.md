@@ -23,4 +23,6 @@ ORDER BY Organization.Name;
 Column "OrgType" in table "Organization" is currently set up as an enum type, meaning only the following values can be entered:
 'Association', 'Consulting', 'Doctor''s Office', 'Government', 'Hospital', 'Information Sharing/Analysis', 'Insurance/Plan Provider', 'Distributor', 'Nursing Home', 'Other', 'Pharma', 'Telehealth', 'University Medical Center', 'Urgent Care'
 
+Column "Victim" in table "Incident" is also set up as an enum with the following values: 
+
 ## Included Files
