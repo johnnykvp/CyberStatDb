@@ -5,7 +5,10 @@ Created with MySQL Workbench.
 
 ## Installation
 
+
 ## Example Queries
+*Before executing any queries, I recommend looking at the Conceptual Model to see a visualization of how the database is set up.*
+
 ### Obtaining all data
 SELECT Organization.Name, Organization.OrgType, Breach.BreachType, 
 
