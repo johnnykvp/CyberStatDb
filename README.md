@@ -19,6 +19,27 @@ INNER JOIN Source ON Source.SourceID = FK_SourceID
 ORDER BY Organization.Name;
 
 ### Adding a new entry
+INSERT INTO Organization(Name,OrgType)
+VALUES('Florida Orthopaedic Institute','Association');
+
+INSERT INTO Incident(Victim,VictimEstimate,CostEstimate,FK_OrgID,FK_BreachID)
+VALUES('Patients','640,000','$99 million',
+(SELECT OrgID FROM Organization WHERE Name = 'Florida Orthopaedic Institute'),
+(SELECT BreachID FROM Breach WHERE BreachType = 'Ransomware'));
+
+UPDATE Incident SET Notes = 'SSNs, diagnosis codes, contact info compromised.' WHERE IncidentID = 7;
+
+INSERT INTO Date(IncidentDate,DateAdded)
+VALUES("2020-04-09","2021-04-02");
+UPDATE Incident SET FK_DateID = ((SELECT DateID FROM Date WHERE DateID = 7)) WHERE IncidentID = 7;
+
+Insert INTO Link(URL)
+VALUES('https://www.hipaajournal.com/florida-orthopaedic-institute-facing-class-action-lawsuit-over-ransomware-attack/');
+UPDATE Link SET FK_SourceID = ((SELECT SourceID FROM Source WHERE SourceID = 2)) WHERE LinkID = 5;
+
+UPDATE Incident SET FK_LinkID = ((SELECT LinkID FROM Link WHERE LinkID = 5)) WHERE IncidentID = 7;
+
+Note:
 
 ## Other Notes
 Column "OrgType" in table "Organization" is currently set up as an enum type, meaning only the following values can be entered:
