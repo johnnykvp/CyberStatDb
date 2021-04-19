@@ -39,12 +39,13 @@ UPDATE Link SET FK_SourceID = ((SELECT SourceID FROM Source WHERE SourceID = 2))
 
 UPDATE Incident SET FK_LinkID = ((SELECT LinkID FROM Link WHERE LinkID = 5)) WHERE IncidentID = 7;
 
-*Note: new BreachType and Domain columns weren't added in this example because the values are already present in the database. Creating these would result in duplicate values. 
+*Note: new BreachType and Domain columns weren't added in this example because the values are already present in the database. Creating these would result in duplicate values.*
 
-For example, I didn't add the lines below, because I've already entered "Ransomware" and "HIPAAJournal" before from a previous entry. Otherwise, you should write lines similar to the ones below to add a new BreachType or Domain.*
+*For example, I didn't add the lines below, because I've already entered "Ransomware" and "HIPAAJournal" before from a previous entry. Otherwise, you should write lines similar to the ones below to add a new BreachType or Domain.*
 
 INSERT INTO Breach(BreachType)
 VALUES('Ransomware');
+
 INSERT INTO Source(Domain)
 VALUES('HIPAAJournal');
 
