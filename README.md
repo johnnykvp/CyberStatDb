@@ -58,7 +58,13 @@ VALUES('Ransomware');
 INSERT INTO Source(Domain)
 VALUES('HIPAAJournal');
 
+### Checking Entry IDs
+*Use IDs to connect entries from different tables together.*
+SELECT * FROM Link;
+
 ## Other Notes
+"Incident" is the main table, where "Organization", "Breach", "Date", and "Link" are connected by foreign key IDs (FK_TableNameID). "Link" is connected to "Source" by column "FK_SourceID".
+
 Column "OrgType" in table "Organization" is currently set up as an enum type, meaning only the following values can be entered:
 'Association', 'Consulting', 'Doctor''s Office', 'Government', 'Hospital', 'Information Sharing/Analysis', 'Insurance/Plan Provider', 'Distributor', 'Nursing Home', 'Other', 'Pharma', 'Telehealth', 'University Medical Center', 'Urgent Care'
 
