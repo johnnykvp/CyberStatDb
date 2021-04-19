@@ -59,8 +59,15 @@ INSERT INTO Source(Domain)
 VALUES('HIPAAJournal');
 
 ### Checking Entry IDs
-*Use IDs to connect entries from different tables together.*
+*Use IDs to connect entries from different tables together. For example, use the queries below to check all data in "Link" and "Incident". Then pay attention to the last "LinkID" and "IncidentID" entered.*
+
 SELECT * FROM Link;
+
+SELECT * FROM Incident;
+
+*Afterwards, connect the tables together, like seen below.*
+
+UPDATE Incident SET FK_LinkID = ((SELECT LinkID FROM Link WHERE LinkID = 5)) WHERE IncidentID = 7;
 
 ## Other Notes
 "Incident" is the main table, where "Organization", "Breach", "Date", and "Link" are connected by foreign key IDs (FK_TableNameID). "Link" is connected to "Source" by column "FK_SourceID".
