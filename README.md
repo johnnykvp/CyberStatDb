@@ -65,7 +65,7 @@ SELECT * FROM Link;
 
 SELECT * FROM Incident;
 
-*Afterwards, connect the tables together, like seen below.*
+*Afterwards, connect the entries together, like seen below.*
 
 UPDATE Incident SET FK_LinkID = ((SELECT LinkID FROM Link WHERE LinkID = 5)) WHERE IncidentID = 7;
 
