@@ -1,10 +1,10 @@
 # HCO Cyberattack Database (2020)
 A collection of data regarding health care organization (HCO) cyberattacks that occured in 2020, the peak year of the COVID-19 pandemic.
 
-Created by Johnny Pham using MySQL Workbench.
+Created by Johnny Pham with MySQL Workbench.
 
-## Installation *(Using MySQL Workbench)*
-Download MySQL Workbench.
+## Installation
+Download MySQL Workbench (or other preferred software).
 https://dev.mysql.com/downloads/workbench/
 
 Create a new MySQL Connection. Check this site for more details (and screenshots):
