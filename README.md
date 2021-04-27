@@ -13,7 +13,7 @@ https://www.linode.com/docs/guides/deploy-mysql-workbench-for-database-administr
 
 Default schema can be left blank as it's included in the CyberStat.sql file.
 
-Import the CyberStat.sql file, using the self-contained file option. Default target schema can be left blank as it's included in the file.
+Import the CyberStat.sql file, using the self-contained file option.
 
 ## Example Queries
 *Before executing any queries, I recommend looking at the Conceptual Model to see a visualization of how the database is set up.*
