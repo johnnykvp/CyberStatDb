@@ -3,7 +3,7 @@ A collection of data regarding health care organization (HCO) cyberattacks that 
 
 Created by Johnny Pham using MySQL Workbench.
 
-## Installation (Using MySQL Workbench)
+## Installation *(Using MySQL Workbench)*
 Download MySQL Workbench.
 https://dev.mysql.com/downloads/workbench/
 
