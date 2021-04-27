@@ -3,8 +3,15 @@ A collection of data regarding health care organization (HCO) cyberattacks that 
 
 Created by Johnny Pham using MySQL Workbench.
 
-## Installation
+## Installation (Using MySQL Workbench)
+Download MySQL Workbench.
+https://dev.mysql.com/downloads/workbench/
 
+Create a new MySQL Connection. Check this site for more details (and screenshots):
+https://www.linode.com/docs/guides/deploy-mysql-workbench-for-database-administration/#install-and-configure-mysql-workbench
+Default schema can be left blank as it's included in the .sql file.
+
+Import the .sql file, using the self-contained file option. Default target schema can be left blank as it's included in the .sql file.
 
 ## Example Queries
 *Before executing any queries, I recommend looking at the Conceptual Model to see a visualization of how the database is set up.*
