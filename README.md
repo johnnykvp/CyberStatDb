@@ -10,6 +10,7 @@ https://dev.mysql.com/downloads/workbench/
 Create a new MySQL Connection. Check this site for more details (and screenshots):
 
 https://www.linode.com/docs/guides/deploy-mysql-workbench-for-database-administration/#install-and-configure-mysql-workbench
+
 Default schema can be left blank as it's included in the .sql file.
 
 Import the .sql file, using the self-contained file option. Default target schema can be left blank as it's included in the .sql file.
