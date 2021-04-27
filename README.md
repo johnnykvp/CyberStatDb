@@ -11,9 +11,9 @@ Create a new MySQL Connection. Check this site for more details (and screenshots
 
 https://www.linode.com/docs/guides/deploy-mysql-workbench-for-database-administration/#install-and-configure-mysql-workbench
 
-Default schema can be left blank as it's included in the CyberStat.sql file.
+Default Schema can be left blank as it's included in the CyberStat.sql file.
 
-Import the CyberStat.sql file, using the self-contained file option.
+Import the CyberStat.sql file, using the Self-Contained File option. Pick Dump Structure and Data option, then Start Import.
 
 ## Example Queries
 *Before executing any queries, I recommend looking at the Conceptual Model to see a visualization of how the database is set up.*
