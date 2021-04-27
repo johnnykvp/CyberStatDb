@@ -11,9 +11,9 @@ Create a new MySQL Connection. Check this site for more details (and screenshots
 
 https://www.linode.com/docs/guides/deploy-mysql-workbench-for-database-administration/#install-and-configure-mysql-workbench
 
-Default schema can be left blank as it's included in the .sql file.
+Default schema can be left blank as it's included in the CyberStat.sql file.
 
-Import the .sql file, using the self-contained file option. Default target schema can be left blank as it's included in the .sql file.
+Import the CyberStat.sql file, using the self-contained file option. Default target schema can be left blank as it's included in the file.
 
 ## Example Queries
 *Before executing any queries, I recommend looking at the Conceptual Model to see a visualization of how the database is set up.*
@@ -88,5 +88,3 @@ Column "OrgType" in table "Organization" is currently set up as an enum type, me
 'Association', 'Consulting', 'Doctor''s Office', 'Government', 'Hospital', 'Information Sharing/Analysis', 'Insurance/Plan Provider', 'Distributor', 'Nursing Home', 'Other', 'Pharma', 'Telehealth', 'University Medical Center', 'Urgent Care'
 
 Column "Victim" in table "Incident" is also set up as an enum with the following values: 'Patients', 'Insiders', 'Both'
-
-## Included Files
