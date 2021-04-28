@@ -13,7 +13,7 @@ https://www.linode.com/docs/guides/deploy-mysql-workbench-for-database-administr
 
 Default Schema can be left blank as it's included in the CyberStat.sql file.
 
-Import the CyberStat.sql file, using the Self-Contained File option. Pick Dump Structure and Data option, then Start Import.
+Import the CyberStat.sql file. Go to the Server tab, select Data Import, and select CyberStat.sql using the Self-Contained File option. Pick the Dump Structure and Data option, then Start Import.
 
 ## Example Queries
 *Before executing any queries, I recommend looking at the Conceptual Model to see a visualization of how the database is set up.*
