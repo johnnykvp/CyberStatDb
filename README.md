@@ -62,7 +62,7 @@ UPDATE Incident SET FK_LinkID = ((SELECT LinkID FROM Link WHERE LinkID = 5)) WHE
 
 *Note: new BreachType and Domain columns weren't added in this example because the values are already present in the database. Creating these would result in unnecessary duplicate values.*
 
-*For example, I didn't add the lines below, because I've already entered "Ransomware" and "HIPAAJournal" before from a previous entry, using "BreachID" and "SourceID" to obtain them. Otherwise, you should write lines similar to the ones below to add a new BreachType or Domain.*
+*For example, I didn't add the lines seen below, because I've already entered "Ransomware" and "HIPAAJournal" before from a previous entry, using "BreachID" and "SourceID" to obtain them. Otherwise, you should write lines similar to the ones below to add a new BreachType or Domain.*
 
 INSERT INTO Breach(BreachType)
 VALUES('Ransomware');
